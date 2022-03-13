@@ -84,7 +84,7 @@ void add_item(LISTCHOICE * list_identifier, char *str, int x, int y,
     list_identifier->backcolor1 = bcolor1;
     list_identifier->forecolor0 = fcolor0;
     list_identifier->forecolor1 = fcolor1;
-    list_identifier-> = x;
+    list_identifier->wherex = x;
     list_identifier->wherey = y;
     list_identifier->item = (char *)malloc(sizeof(char) * strlen(str) + 1);
     strcpy(list_identifier->item, str);
